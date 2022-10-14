@@ -3,7 +3,6 @@ import {
   CAvatar,
   CBadge,
   CDropdown,
-  CDropdownDivider,
   CDropdownHeader,
   CDropdownItem,
   CDropdownMenu,
@@ -11,14 +10,11 @@ import {
 } from '@coreui/react'
 import {
   cilBell,
-  cilCreditCard,
   cilCommentSquare,
   cilEnvelopeOpen,
-  cilFile,
-  cilLockLocked,
-  cilSettings,
+  cilApps,
   cilTask,
-  cilUser,
+  cilSettings,
 } from '@coreui/icons'
 import CIcon from '@coreui/icons-react'
 
@@ -31,62 +27,43 @@ const AppHeaderDropdown = () => {
         <CAvatar src={avatar8} size="md" />
       </CDropdownToggle>
       <CDropdownMenu className="pt-0" placement="bottom-end">
-        <CDropdownHeader className="bg-light fw-semibold py-2">Account</CDropdownHeader>
-        <CDropdownItem href="#">
+        <CDropdownHeader className="bg-light fw-semibold py-2">消息统计</CDropdownHeader>
+        <CDropdownItem href="#" className="py-2">
           <CIcon icon={cilBell} className="me-2" />
-          Updates
+          通知
           <CBadge color="info" className="ms-2">
             42
           </CBadge>
         </CDropdownItem>
-        <CDropdownItem href="#">
+        <CDropdownItem href="#" className="py-2">
           <CIcon icon={cilEnvelopeOpen} className="me-2" />
-          Messages
+          站内信
           <CBadge color="success" className="ms-2">
             42
           </CBadge>
         </CDropdownItem>
-        <CDropdownItem href="#">
+        <CDropdownItem href="#" className="py-2">
           <CIcon icon={cilTask} className="me-2" />
-          Tasks
+          待办任务
           <CBadge color="danger" className="ms-2">
             42
           </CBadge>
         </CDropdownItem>
-        <CDropdownItem href="#">
+        <CDropdownItem href="#" className="py-2">
           <CIcon icon={cilCommentSquare} className="me-2" />
-          Comments
+          评论
           <CBadge color="warning" className="ms-2">
             42
           </CBadge>
         </CDropdownItem>
-        <CDropdownHeader className="bg-light fw-semibold py-2">Settings</CDropdownHeader>
-        <CDropdownItem href="#">
-          <CIcon icon={cilUser} className="me-2" />
-          Profile
-        </CDropdownItem>
-        <CDropdownItem href="#">
+        <CDropdownHeader className="bg-light fw-semibold py-2">账号设置</CDropdownHeader>
+        <CDropdownItem href="#" className="py-2">
           <CIcon icon={cilSettings} className="me-2" />
-          Settings
+          个人资料
         </CDropdownItem>
-        <CDropdownItem href="#">
-          <CIcon icon={cilCreditCard} className="me-2" />
-          Payments
-          <CBadge color="secondary" className="ms-2">
-            42
-          </CBadge>
-        </CDropdownItem>
-        <CDropdownItem href="#">
-          <CIcon icon={cilFile} className="me-2" />
-          Projects
-          <CBadge color="primary" className="ms-2">
-            42
-          </CBadge>
-        </CDropdownItem>
-        <CDropdownDivider />
-        <CDropdownItem href="#">
-          <CIcon icon={cilLockLocked} className="me-2" />
-          Lock Account
+        <CDropdownItem href="#" className="py-2">
+          <CIcon icon={cilApps} className="me-2" />
+          修改密码
         </CDropdownItem>
       </CDropdownMenu>
     </CDropdown>

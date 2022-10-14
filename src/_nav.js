@@ -12,19 +12,58 @@ import {
   cilPuzzle,
   cilSpeedometer,
   cilStar,
+  cilBook,
+  cilSpreadsheet,
+  cilUser,
+  cilContact,
+  cilClock,
 } from '@coreui/icons'
 import { CNavGroup, CNavItem, CNavTitle } from '@coreui/react'
 
 const _nav = [
   {
     component: CNavItem,
-    name: 'Dashboard',
+    name: '控制台',
     to: '/dashboard',
     icon: <CIcon icon={cilSpeedometer} customClassName="nav-icon" />,
-    badge: {
-      color: 'info',
-      text: 'NEW',
-    },
+  },
+  {
+    component: CNavTitle,
+    name: '用户',
+  },
+  {
+    component: CNavItem,
+    name: '用户列表',
+    to: '/account/users',
+    icon: <CIcon icon={cilUser} customClassName="nav-icon" />,
+  },
+  {
+    component: CNavItem,
+    name: '超管用户',
+    to: '/account/admins',
+    icon: <CIcon icon={cilContact} customClassName="nav-icon" />,
+  },
+  {
+    component: CNavItem,
+    name: '登录历史',
+    to: '/account/login-historys',
+    icon: <CIcon icon={cilClock} customClassName="nav-icon" />,
+  },
+  {
+    component: CNavTitle,
+    name: '系统',
+  },
+  {
+    component: CNavItem,
+    name: '数据字典',
+    to: '/system/dictionarys',
+    icon: <CIcon icon={cilBook} customClassName="nav-icon" />,
+  },
+  {
+    component: CNavItem,
+    name: '系统参数',
+    to: '/system/parameters',
+    icon: <CIcon icon={cilSpreadsheet} customClassName="nav-icon" />,
   },
   {
     component: CNavTitle,

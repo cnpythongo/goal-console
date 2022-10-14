@@ -1,14 +1,14 @@
 {
-  "name": "@coreui/coreui-free-react-admin-template",
-  "version": "4.4.0",
-  "description": "CoreUI Free React Admin Template",
+  "name": "@cnpythongo/goal-console",
+  "version": "1.0.0",
+  "description": "Goal Console",
   "homepage": ".",
   "bugs": {
-    "url": "https://github.com/coreui/coreui-free-react-admin-template/issues"
+    "url": "https://github.com/cnpythongo/goal-console/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:coreui/coreui-free-react-admin-template.git"
+    "url": "git@github.com:cnpythongo/goal-console.git"
   },
   "license": "MIT",
   "author": "The CoreUI Team (https://github.com/orgs/coreui/people)",

@@ -1,6 +1,11 @@
 import React from 'react'
 
 const Dashboard = React.lazy(() => import('./views/dashboard/Dashboard'))
+// Account
+const AccountUsers = React.lazy(() => import('./views/account/Users'))
+const AccountAdmins = React.lazy(() => import('./views/account/Admins'))
+const AccountLoginHistorys = React.lazy(() => import('./views/account/LoginHistorys'))
+
 const Colors = React.lazy(() => import('./views/theme/colors/Colors'))
 const Typography = React.lazy(() => import('./views/theme/typography/Typography'))
 
@@ -51,8 +56,16 @@ const Toasts = React.lazy(() => import('./views/notifications/toasts/Toasts'))
 const Widgets = React.lazy(() => import('./views/widgets/Widgets'))
 
 const routes = [
-  { path: '/', exact: true, name: 'Home' },
-  { path: '/dashboard', name: 'Dashboard', element: Dashboard },
+  { path: '/', exact: true, name: '控制台' },
+  { path: '/dashboard', name: '控制台', element: Dashboard },
+
+  { path: '/account/users', name: '用户列表', element: AccountUsers },
+  { path: '/account/admins', name: '超管用户', element: AccountAdmins },
+  { path: '/account/login-historys', name: '登录历史', element: AccountLoginHistorys },
+
+  { path: '/system/dictionarys', name: '数据字典', element: AccountUsers },
+  { path: '/system/parameters', name: '系统参数', element: AccountUsers },
+
   { path: '/theme', name: 'Theme', element: Colors, exact: true },
   { path: '/theme/colors', name: 'Colors', element: Colors },
   { path: '/theme/typography', name: 'Typography', element: Typography },
